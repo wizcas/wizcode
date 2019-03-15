@@ -12,12 +12,9 @@ module.exports = {
     },
     output: {
         filename: '[name].bundle.js',
-        path: path.resolve(__dirname, 'assets/dist'),
+        path: path.resolve(__dirname, 'assets/built'),
     },
     devtool: 'source-map',
-    devServer: {
-        contentBase: './dist'
-    },
     plugins: [
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin({
